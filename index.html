@@ -85,7 +85,8 @@
           map: map
         });
 
-        var info = '<div style="font-size:18px;font-weight:bold;margin-bottom:10px;">' + data['名前'] + '<br />' + '<a target="_blank" href="data['URL']">動画</a>' + '</div>';
+        var MOVIE_URL = data['URL'];
+        var info = '<div style="font-size:18px;font-weight:bold;margin-bottom:10px;">' + data['名前'] + '<br />' + '<a target="_blank" href="${MOVIE_URL}">動画</a>' + '</div>';
         infoWindow[i] = new google.maps.InfoWindow({
           content: info
         });
@@ -100,7 +101,6 @@
           if (!latitude) { continue; }
           addMarker(i, markerData[i]);
           var name = markerData[i]['名前'];
-          var movieURL = markerData[i]['URL'];
 
           sidebar_html += `<b>${i + 1}</b> <a href="javascript:openWindow(${i})">${name}<\/a><br />`;
         }
