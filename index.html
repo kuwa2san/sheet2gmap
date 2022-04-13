@@ -62,7 +62,7 @@
         });
 
         var request = new XMLHttpRequest();
-        request.open('GET', `https://sheets.googleapis.com/v4/spreadsheets/1toWj6F_KBkKpRe7ufq2FpPjNNnXjofOfnCqvFaWIQHA/values/sheet1?key=AIzaSyDoT_LGPVr06qSJvXUK2w0icd74Ts4BobE`, true);
+        request.open('GET', `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/sheet1?key=${API_KEY}`, true);
         request.responseType = 'json';
 
         request.onload = function () {
