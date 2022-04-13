@@ -100,6 +100,7 @@
           if (!latitude) { continue; }
           addMarker(i, markerData[i]);
           var name = markerData[i]['名前'];
+          var movieURL = markerData[i]['URL'];
 
           sidebar_html += `<b>${i + 1}</b> <a href="javascript:openWindow(${i})">${name}<\/a><br />`;
         }
