@@ -85,7 +85,7 @@
           map: map
         });
 
-        var info = '<div style="font-size:18px;font-weight:bold;margin-bottom:10px;">' + data['名前'] + '<br />' + data['URL'] + '</div>';
+        var info = '<div style="font-size:18px;font-weight:bold;margin-bottom:10px;">' + data['名前'] + '<br />' + '<a target="_blank" href="${movieURL}">動画</a>' + '</div>';
         infoWindow[i] = new google.maps.InfoWindow({
           content: info
         });
