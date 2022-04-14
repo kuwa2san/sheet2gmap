@@ -104,6 +104,7 @@
           addMarker(i, markerData[i]);
           var name = markerData[i]['名前'];
           var pref = markerData[i]['居住地'];
+          var MovieURL = markerData[i]['URL'];
 
           sidebar_html += `<b>${i + 1}</b>    ${pref}    <a href="javascript:openWindow(${i})">${name}<\/a><br />`;
         }
