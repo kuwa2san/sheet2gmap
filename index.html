@@ -37,6 +37,7 @@
       var marker = [];
       var infoWindow = [];
       var windowOpened;
+      var MOVIE_URL;
 
       function parseData(data) {
         var keys = data.values[0];
@@ -105,6 +106,7 @@
           addMarker(i, markerData[i]);
           var name = markerData[i]['名前'];
           var pref = markerData[i]['居住地'];
+          MOVIE_URL = markerData[i]['URL'];
 
           sidebar_html += `<b>${i + 1}</b>    ${pref}    <a href="javascript:openWindow(${i})">${name}<\/a><br />`;
         }
