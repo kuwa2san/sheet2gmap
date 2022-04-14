@@ -107,7 +107,7 @@
           var pref = markerData[i]['居住地'];
           MOVIE_URL = markerData[i]['URL'];
 
-          sidebar_html += `<div style="font-size:14px;"><pre><b>${i + 1}</b> ${pref}&#009;&#009;<a href="javascript:openWindow(${i})">${name}<\/a></pre></div>`;
+          sidebar_html += `<div style="font-size:12px;"><pre><b>${i + 1}</b> ${pref}&#009;&#009;<a href="javascript:openWindow(${i})">${name}</a></pre></div>`;
         }
 
        <!-- document.getElementById("sidebar").innerHTML = `<a target="_blank" href="https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit?usp=sharing">元データ(Google スプレッドシート)</a><br /><a target="_blank" href="https://github.com/champierre/sheet2gmap">ソースコード(GitHub)</a><br /><br />` + sidebar_html; -->
