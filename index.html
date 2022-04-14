@@ -105,11 +105,11 @@
           var name = markerData[i]['名前'];
           var pref = markerData[i]['居住地'];
 
-          sidebar_html += `<b>${i + 1}</b>  ${pref} <a href="javascript:openWindow(${i})">${name}<\/a><br />`;
+          sidebar_html += `<b>${i + 1}</b>    ${pref}    <a href="javascript:openWindow(${i})">${name}<\/a><br />`;
         }
 
        <!-- document.getElementById("sidebar").innerHTML = `<a target="_blank" href="https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit?usp=sharing">元データ(Google スプレッドシート)</a><br /><a target="_blank" href="https://github.com/champierre/sheet2gmap">ソースコード(GitHub)</a><br /><br />` + sidebar_html; -->
-          document.getElementById("sidebar").innerHTML = `<div style="font-size:18px;font-weight:bold;margin-bottom:10px;">車載主マップ</div><br /><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfoRN94pJVfDvWLfqFFC-McWUmthYuQTzslLnlL50GvmTdaaQ/viewform">登録はこちらから(Googleフォーム)</a><br />` + sidebar_html;
+          document.getElementById("sidebar").innerHTML = `<div style="font-size:18px;font-weight:bold;">車載主マップ</div><br /><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfoRN94pJVfDvWLfqFFC-McWUmthYuQTzslLnlL50GvmTdaaQ/viewform">登録はこちらから(Googleフォーム)</a><br />` + sidebar_html;
       }
 
       function markerEvent(i) {
